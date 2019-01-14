@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		CB37528A21EC6AD500512C98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37528921EC6AD500512C98 /* AppDelegate.swift */; };
-		CB37528C21EC6AD500512C98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37528B21EC6AD500512C98 /* ViewController.swift */; };
 		CB37528F21EC6AD500512C98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB37528D21EC6AD500512C98 /* Main.storyboard */; };
 		CB37529121EC6AD600512C98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB37529021EC6AD600512C98 /* Assets.xcassets */; };
 		CB37529421EC6AD600512C98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB37529221EC6AD600512C98 /* LaunchScreen.storyboard */; };
+		CB3752A021EC6B5600512C98 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37529F21EC6B5600512C98 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CB37528621EC6AD500512C98 /* BackgroundModes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackgroundModes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB37528921EC6AD500512C98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB37528B21EC6AD500512C98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB37528E21EC6AD500512C98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB37529021EC6AD600512C98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB37529321EC6AD600512C98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB37529521EC6AD600512C98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB37529F21EC6B5600512C98 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,54 @@
 		CB37528821EC6AD500512C98 /* BackgroundModes */ = {
 			isa = PBXGroup;
 			children = (
+				CB3752A121EC6B6F00512C98 /* Resources */,
+				CB37529B21EC6AFF00512C98 /* ViewControllers */,
 				CB37528921EC6AD500512C98 /* AppDelegate.swift */,
-				CB37528B21EC6AD500512C98 /* ViewController.swift */,
-				CB37528D21EC6AD500512C98 /* Main.storyboard */,
-				CB37529021EC6AD600512C98 /* Assets.xcassets */,
-				CB37529221EC6AD600512C98 /* LaunchScreen.storyboard */,
 				CB37529521EC6AD600512C98 /* Info.plist */,
 			);
 			path = BackgroundModes;
+			sourceTree = "<group>";
+		};
+		CB37529B21EC6AFF00512C98 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB3752A221EC6B8C00512C98 /* LaunchScreen */,
+				CB37529D21EC6B3200512C98 /* Main */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CB37529D21EC6B3200512C98 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CB37529E21EC6B3700512C98 /* Storyboard */,
+				CB37529F21EC6B5600512C98 /* MainTabBarController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CB37529E21EC6B3700512C98 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CB37528D21EC6AD500512C98 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		CB3752A121EC6B6F00512C98 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB37529021EC6AD600512C98 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CB3752A221EC6B8C00512C98 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CB37529221EC6AD600512C98 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +136,11 @@
 				TargetAttributes = {
 					CB37528521EC6AD500512C98 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,7 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB37528C21EC6AD500512C98 /* ViewController.swift in Sources */,
+				CB3752A021EC6B5600512C98 /* MainTabBarController.swift in Sources */,
 				CB37528A21EC6AD500512C98 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
