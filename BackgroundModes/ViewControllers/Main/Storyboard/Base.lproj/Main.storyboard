@@ -20,6 +20,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="zlI-Hx-qSw" kind="relationship" relationship="viewControllers" id="b0c-vk-f7g"/>
+                        <segue destination="mRD-o2-rYy" kind="relationship" relationship="viewControllers" id="K0l-WG-V3V"/>
+                        <segue destination="Kcf-Mj-390" kind="relationship" relationship="viewControllers" id="PzJ-c3-eTQ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f3O-Oe-AUT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -53,8 +55,65 @@
             </objects>
             <point key="canvasLocation" x="-1135" y="1259"/>
         </scene>
+        <!--Location-->
+        <scene sceneID="W57-g8-FPO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Location" id="Ozq-6b-hJA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Location" image="LocationIcon" id="2dO-zd-ABJ"/>
+                    <navigationItem key="navigationItem" id="OHh-wM-vrU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZwV-25-7Tf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-261" y="1274"/>
+        </scene>
+        <!--Location-->
+        <scene sceneID="QNJ-Tw-4z2">
+            <objects>
+                <navigationController id="mRD-o2-rYy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Location" image="LocationIcon" id="qhO-hf-KYp"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JZw-9a-wVU">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ozq-6b-hJA" kind="relationship" relationship="rootViewController" id="H8V-Vd-N0x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wTf-6m-jxc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-260" y="824"/>
+        </scene>
+        <!--Fibonacci-->
+        <scene sceneID="qvK-4e-NJQ">
+            <objects>
+                <navigationController id="Kcf-Mj-390" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Fibonacci" image="FibonacciIcon" id="TOt-Z8-0tY"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3u8-Kp-0FG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="JeK-8h-yrs" kind="relationship" relationship="rootViewController" id="wpN-vY-pmH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3fJ-Xi-swq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="609" y="824"/>
+        </scene>
+        <!--Fibonacci-->
+        <scene sceneID="o19-UO-6UE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Fibonacci" id="JeK-8h-yrs" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="XFZ-n4-6tK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GZw-Ix-QHJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="609" y="1274"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AudioIcon" width="23" height="23"/>
+        <image name="FibonacciIcon" width="21" height="15"/>
+        <image name="LocationIcon" width="23" height="23"/>
     </resources>
 </document>

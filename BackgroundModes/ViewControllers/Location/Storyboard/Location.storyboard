@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lN9-pI-gd6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Location View Controller-->
+        <scene sceneID="dx3-C7-LDJ">
+            <objects>
+                <viewController id="lN9-pI-gd6" customClass="LocationViewController" customModule="BackgroundModes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eEa-Kb-fGr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fhy-Oo-ClV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <outlet property="delegate" destination="lN9-pI-gd6" id="KzE-Vm-cK4"/>
+                                </connections>
+                            </mapView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SYY-W2-edV">
+                                <rect key="frame" x="16" y="40" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onTrackLocationSwitchValueChanged:" destination="lN9-pI-gd6" eventType="valueChanged" id="gm4-sh-Ech"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jfZ-Yf-eSv" firstAttribute="trailing" secondItem="fhy-Oo-ClV" secondAttribute="trailing" id="DMX-1J-HpU"/>
+                            <constraint firstItem="jfZ-Yf-eSv" firstAttribute="bottom" secondItem="fhy-Oo-ClV" secondAttribute="bottom" id="DOD-Sr-dEd"/>
+                            <constraint firstItem="SYY-W2-edV" firstAttribute="top" secondItem="jfZ-Yf-eSv" secondAttribute="top" constant="20" id="E0v-Zx-9it"/>
+                            <constraint firstItem="fhy-Oo-ClV" firstAttribute="top" secondItem="eEa-Kb-fGr" secondAttribute="top" id="LHg-rF-02k"/>
+                            <constraint firstItem="SYY-W2-edV" firstAttribute="leading" secondItem="jfZ-Yf-eSv" secondAttribute="leading" constant="16" id="cOx-tI-8R9"/>
+                            <constraint firstItem="fhy-Oo-ClV" firstAttribute="leading" secondItem="eEa-Kb-fGr" secondAttribute="leading" id="uBX-ak-sPM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jfZ-Yf-eSv"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="fhy-Oo-ClV" id="ep0-4s-bzP"/>
+                        <outlet property="trackLocationSwitch" destination="SYY-W2-edV" id="1Rx-74-XSH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KcZ-PH-55L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="145" y="138"/>
+        </scene>
+    </scenes>
+</document>

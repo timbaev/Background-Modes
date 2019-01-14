@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<gpx>
+    <wpt lon="-90.072511" lat="29.95027">
+        <name>P127</name>
+        <ele>139.36167907715</ele>
+        <time>2017-05-18T12:20:25Z</time>
+    </wpt>
+    <wpt lon="-90.072779" lat="29.950326">
+        <name>P126</name>
+        <ele>139.58670043945</ele>
+        <time>2017-05-18T12:20:37Z</time>
+    </wpt>
+    <wpt lon="-90.074183" lat="29.949991">
+        <name>P102</name>
+        <ele>139.79161071777</ele>
+        <time>2017-05-18T12:20:39Z</time>
+    </wpt>
+    <wpt lon="-90.074427" lat="29.951186">
+        <name>P169</name>
+        <ele>139.78443908691</ele>
+        <time>2017-05-18T12:21:14Z</time>
+    </wpt>
+    <wpt lon="-90.07417" lat="29.951934">
+        <name>P146</name>
+        <ele>138.47015380859</ele>
+        <time>2017-05-18T12:21:22Z</time>
+    </wpt>
+</gpx>

@@ -17,6 +17,11 @@
 		CB3752AB21EC712800512C98 /* Kevin MacLeod - Feelin Good.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CB3752AA21EC712800512C98 /* Kevin MacLeod - Feelin Good.mp3 */; };
 		CB3752AF21EC718900512C98 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3752AE21EC718900512C98 /* Log.swift */; };
 		CB3752B221EC77CC00512C98 /* DurationFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3752B121EC77CC00512C98 /* DurationFormatter.swift */; };
+		CB3752B621EC7F1000512C98 /* Location.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB3752B521EC7F1000512C98 /* Location.storyboard */; };
+		CB3752B821EC7F2100512C98 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3752B721EC7F2100512C98 /* LocationViewController.swift */; };
+		CB3752BF21ECB17A00512C98 /* ParkingLocations.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CB3752BE21ECB17A00512C98 /* ParkingLocations.gpx */; };
+		CB3752C321ECB60800512C98 /* Fibonacci.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB3752C221ECB60800512C98 /* Fibonacci.storyboard */; };
+		CB3752C521ECBF4B00512C98 /* FibonacciViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3752C421ECBF4B00512C98 /* FibonacciViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		CB3752AA21EC712800512C98 /* Kevin MacLeod - Feelin Good.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Kevin MacLeod - Feelin Good.mp3"; sourceTree = "<group>"; };
 		CB3752AE21EC718900512C98 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		CB3752B121EC77CC00512C98 /* DurationFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationFormatter.swift; sourceTree = "<group>"; };
+		CB3752B521EC7F1000512C98 /* Location.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Location.storyboard; sourceTree = "<group>"; };
+		CB3752B721EC7F2100512C98 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		CB3752BE21ECB17A00512C98 /* ParkingLocations.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ParkingLocations.gpx; sourceTree = "<group>"; };
+		CB3752C221ECB60800512C98 /* Fibonacci.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Fibonacci.storyboard; sourceTree = "<group>"; };
+		CB3752C421ECBF4B00512C98 /* FibonacciViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +88,9 @@
 			isa = PBXGroup;
 			children = (
 				CB3752A321EC6D9D00512C98 /* Audio */,
+				CB3752C021ECB5E500512C98 /* Fibonacci */,
 				CB3752A221EC6B8C00512C98 /* LaunchScreen */,
+				CB3752B321EC7EF800512C98 /* Location */,
 				CB37529D21EC6B3200512C98 /* Main */,
 			);
 			path = ViewControllers;
@@ -105,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				CB3752A921EC711D00512C98 /* Audio */,
+				CB3752BD21ECB16700512C98 /* Locations */,
 				CB37529021EC6AD600512C98 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -165,6 +178,48 @@
 				CB3752B121EC77CC00512C98 /* DurationFormatter.swift */,
 			);
 			path = Formatters;
+			sourceTree = "<group>";
+		};
+		CB3752B321EC7EF800512C98 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				CB3752B421EC7F0300512C98 /* Storyboard */,
+				CB3752B721EC7F2100512C98 /* LocationViewController.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		CB3752B421EC7F0300512C98 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CB3752B521EC7F1000512C98 /* Location.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		CB3752BD21ECB16700512C98 /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				CB3752BE21ECB17A00512C98 /* ParkingLocations.gpx */,
+			);
+			path = Locations;
+			sourceTree = "<group>";
+		};
+		CB3752C021ECB5E500512C98 /* Fibonacci */ = {
+			isa = PBXGroup;
+			children = (
+				CB3752C121ECB5FB00512C98 /* Storyboard */,
+				CB3752C421ECBF4B00512C98 /* FibonacciViewController.swift */,
+			);
+			path = Fibonacci;
+			sourceTree = "<group>";
+		};
+		CB3752C121ECB5FB00512C98 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CB3752C221ECB60800512C98 /* Fibonacci.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB3752AB21EC712800512C98 /* Kevin MacLeod - Feelin Good.mp3 in Resources */,
+				CB3752C321ECB60800512C98 /* Fibonacci.storyboard in Resources */,
 				CB37529421EC6AD600512C98 /* LaunchScreen.storyboard in Resources */,
+				CB3752BF21ECB17A00512C98 /* ParkingLocations.gpx in Resources */,
 				CB3752A621EC6DB100512C98 /* Audio.storyboard in Resources */,
+				CB3752B621EC7F1000512C98 /* Location.storyboard in Resources */,
 				CB37529121EC6AD600512C98 /* Assets.xcassets in Resources */,
 				CB37528F21EC6AD500512C98 /* Main.storyboard in Resources */,
 			);
@@ -248,6 +306,8 @@
 				CB3752A021EC6B5600512C98 /* MainTabBarController.swift in Sources */,
 				CB37528A21EC6AD500512C98 /* AppDelegate.swift in Sources */,
 				CB3752B221EC77CC00512C98 /* DurationFormatter.swift in Sources */,
+				CB3752B821EC7F2100512C98 /* LocationViewController.swift in Sources */,
+				CB3752C521ECBF4B00512C98 /* FibonacciViewController.swift in Sources */,
 				CB3752AF21EC718900512C98 /* Log.swift in Sources */,
 				CB3752A821EC6DC400512C98 /* AudioViewController.swift in Sources */,
 			);
