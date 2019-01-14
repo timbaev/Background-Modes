@@ -12,6 +12,11 @@
 		CB37529121EC6AD600512C98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB37529021EC6AD600512C98 /* Assets.xcassets */; };
 		CB37529421EC6AD600512C98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB37529221EC6AD600512C98 /* LaunchScreen.storyboard */; };
 		CB3752A021EC6B5600512C98 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37529F21EC6B5600512C98 /* MainTabBarController.swift */; };
+		CB3752A621EC6DB100512C98 /* Audio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB3752A521EC6DB100512C98 /* Audio.storyboard */; };
+		CB3752A821EC6DC400512C98 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3752A721EC6DC400512C98 /* AudioViewController.swift */; };
+		CB3752AB21EC712800512C98 /* Kevin MacLeod - Feelin Good.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CB3752AA21EC712800512C98 /* Kevin MacLeod - Feelin Good.mp3 */; };
+		CB3752AF21EC718900512C98 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3752AE21EC718900512C98 /* Log.swift */; };
+		CB3752B221EC77CC00512C98 /* DurationFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3752B121EC77CC00512C98 /* DurationFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		CB37529321EC6AD600512C98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB37529521EC6AD600512C98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB37529F21EC6B5600512C98 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		CB3752A521EC6DB100512C98 /* Audio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Audio.storyboard; sourceTree = "<group>"; };
+		CB3752A721EC6DC400512C98 /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
+		CB3752AA21EC712800512C98 /* Kevin MacLeod - Feelin Good.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Kevin MacLeod - Feelin Good.mp3"; sourceTree = "<group>"; };
+		CB3752AE21EC718900512C98 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		CB3752B121EC77CC00512C98 /* DurationFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +64,9 @@
 		CB37528821EC6AD500512C98 /* BackgroundModes */ = {
 			isa = PBXGroup;
 			children = (
+				CB3752B021EC77B600512C98 /* Formatters */,
 				CB3752A121EC6B6F00512C98 /* Resources */,
+				CB3752AC21EC716900512C98 /* Tools */,
 				CB37529B21EC6AFF00512C98 /* ViewControllers */,
 				CB37528921EC6AD500512C98 /* AppDelegate.swift */,
 				CB37529521EC6AD600512C98 /* Info.plist */,
@@ -65,6 +77,7 @@
 		CB37529B21EC6AFF00512C98 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CB3752A321EC6D9D00512C98 /* Audio */,
 				CB3752A221EC6B8C00512C98 /* LaunchScreen */,
 				CB37529D21EC6B3200512C98 /* Main */,
 			);
@@ -91,6 +104,7 @@
 		CB3752A121EC6B6F00512C98 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CB3752A921EC711D00512C98 /* Audio */,
 				CB37529021EC6AD600512C98 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -102,6 +116,55 @@
 				CB37529221EC6AD600512C98 /* LaunchScreen.storyboard */,
 			);
 			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		CB3752A321EC6D9D00512C98 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				CB3752A421EC6DA800512C98 /* Storyboard */,
+				CB3752A721EC6DC400512C98 /* AudioViewController.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		CB3752A421EC6DA800512C98 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CB3752A521EC6DB100512C98 /* Audio.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		CB3752A921EC711D00512C98 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				CB3752AA21EC712800512C98 /* Kevin MacLeod - Feelin Good.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		CB3752AC21EC716900512C98 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				CB3752AD21EC717700512C98 /* Logger */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		CB3752AD21EC717700512C98 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				CB3752AE21EC718900512C98 /* Log.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		CB3752B021EC77B600512C98 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				CB3752B121EC77CC00512C98 /* DurationFormatter.swift */,
+			);
+			path = Formatters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,7 +230,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB3752AB21EC712800512C98 /* Kevin MacLeod - Feelin Good.mp3 in Resources */,
 				CB37529421EC6AD600512C98 /* LaunchScreen.storyboard in Resources */,
+				CB3752A621EC6DB100512C98 /* Audio.storyboard in Resources */,
 				CB37529121EC6AD600512C98 /* Assets.xcassets in Resources */,
 				CB37528F21EC6AD500512C98 /* Main.storyboard in Resources */,
 			);
@@ -182,6 +247,9 @@
 			files = (
 				CB3752A021EC6B5600512C98 /* MainTabBarController.swift in Sources */,
 				CB37528A21EC6AD500512C98 /* AppDelegate.swift in Sources */,
+				CB3752B221EC77CC00512C98 /* DurationFormatter.swift in Sources */,
+				CB3752AF21EC718900512C98 /* Log.swift in Sources */,
+				CB3752A821EC6DC400512C98 /* AudioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

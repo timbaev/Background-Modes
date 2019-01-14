@@ -18,10 +18,43 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
+                    <connections>
+                        <segue destination="zlI-Hx-qSw" kind="relationship" relationship="viewControllers" id="b0c-vk-f7g"/>
+                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f3O-Oe-AUT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-260" y="60"/>
         </scene>
+        <!--Audio-->
+        <scene sceneID="TWY-xc-zQi">
+            <objects>
+                <navigationController id="zlI-Hx-qSw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Audio" image="AudioIcon" id="Gw9-XQ-Xpq"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Y8i-ps-Zr1">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cHB-i5-w20" kind="relationship" relationship="rootViewController" id="Etj-7r-kFt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fqz-kF-x6M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1134" y="825"/>
+        </scene>
+        <!--Audio-->
+        <scene sceneID="ibJ-8Z-4kg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Audio" id="cHB-i5-w20" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="JSb-Zl-BTv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1nP-nd-BPS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1135" y="1259"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="AudioIcon" width="23" height="23"/>
+    </resources>
 </document>
