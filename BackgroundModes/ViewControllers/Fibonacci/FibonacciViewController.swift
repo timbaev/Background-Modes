@@ -102,8 +102,4 @@ class FibonacciViewController: UIViewController {
         default: return fib(num - 2) + fib(num - 1)
         }
     }
-    
-    // MARK: - UIViewController
-    
 }
-

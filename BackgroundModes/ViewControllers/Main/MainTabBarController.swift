@@ -10,4 +10,15 @@ import UIKit
 
 class MainTabBarController: UITabBarController {
     
+    // MARK: - Nested Types
+    
+    enum Tabs: Int {
+        
+        // MARK: - Enumeration Cases
+        
+        case audio
+        case location
+        case fibonacci
+        case fetch
+    }
 }
