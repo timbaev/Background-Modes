@@ -13,4 +13,5 @@ extension NSNotification.Name {
     // MARK: - Type Properties
 
     static let backgroundFetch = Notification.Name("backgroundFetch")
+    static let backgroundFetchSuccess = Notification.Name("backgroundFetchSuccess")
 }

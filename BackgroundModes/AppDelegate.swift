@@ -11,11 +11,20 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    // MARK: - Instance Properties
+
+    private var backgroundFetchResult: ((UIBackgroundFetchResult) -> Void)?
+
+    // MARK: -
+
     var window: UIWindow?
 
+    // MARK: - Instance Methods
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         UIApplication.shared.setMinimumBackgroundFetchInterval(UIApplication.backgroundFetchIntervalMinimum)
+
+        NotificationCenter.default.addObserver(self, selector: #selector(self.didBackgroundFetchSuccess(_:)), name: .backgroundFetchSuccess, object: nil)
         
         return true
     }
@@ -23,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         NotificationCenter.default.post(name: .backgroundFetch, object: Date())
 
-        completionHandler(.newData)
+        self.backgroundFetchResult = completionHandler
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -45,9 +54,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        NotificationCenter.default.removeObserver(self, name: .backgroundFetchSuccess, object: nil)
     }
+}
 
+// MARK: -
 
+extension AppDelegate {
+
+    // MARK: - Instance Methods
+
+    @objc private func didBackgroundFetchSuccess(_ notification: NSNotification) {
+        self.backgroundFetchResult?(.newData)
+
+        self.backgroundFetchResult = nil
+    }
 }
 

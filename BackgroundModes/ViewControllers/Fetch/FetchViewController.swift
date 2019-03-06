@@ -39,6 +39,8 @@ class FetchViewController: UIViewController {
         }
 
         self.apply(time: time)
+
+        NotificationCenter.default.post(name: .backgroundFetchSuccess, object: self)
     }
     
     // MARK: -
