@@ -21,27 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        guard let mainTabBarController = window?.rootViewController as? MainTabBarController else {
-            return
-        }
-        
-        guard let viewControllers = mainTabBarController.viewControllers else {
-            return
-        }
-        
-        guard let navigationController = viewControllers[MainTabBarController.Tabs.fetch.rawValue] as? UINavigationController else {
-            return
-        }
-        
-        guard let fetchViewController = navigationController.viewControllers.first as? FetchViewController else {
-            return
-        }
-        
-        fetchViewController.applyFetch {
-            fetchViewController.apply()
-            
-            completionHandler(.newData)
-        }
+        NotificationCenter.default.post(name: .backgroundFetch, object: Date())
+
+        completionHandler(.newData)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

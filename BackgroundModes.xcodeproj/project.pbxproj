@@ -25,6 +25,7 @@
 		CB3752BF21ECB17A00512C98 /* ParkingLocations.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CB3752BE21ECB17A00512C98 /* ParkingLocations.gpx */; };
 		CB3752C321ECB60800512C98 /* Fibonacci.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB3752C221ECB60800512C98 /* Fibonacci.storyboard */; };
 		CB3752C521ECBF4B00512C98 /* FibonacciViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3752C421ECBF4B00512C98 /* FibonacciViewController.swift */; };
+		CBD7281B222FB6BF00D1C684 /* NSNotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7281A222FB6BF00D1C684 /* NSNotificationNameExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		CB3752BE21ECB17A00512C98 /* ParkingLocations.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ParkingLocations.gpx; sourceTree = "<group>"; };
 		CB3752C221ECB60800512C98 /* Fibonacci.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Fibonacci.storyboard; sourceTree = "<group>"; };
 		CB3752C421ECBF4B00512C98 /* FibonacciViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciViewController.swift; sourceTree = "<group>"; };
+		CBD7281A222FB6BF00D1C684 /* NSNotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationNameExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 		CB3752AC21EC716900512C98 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				CBD72819222FB6A600D1C684 /* Extensions */,
 				CB3752AD21EC717700512C98 /* Logger */,
 			);
 			path = Tools;
@@ -245,6 +248,14 @@
 				CB3752C221ECB60800512C98 /* Fibonacci.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		CBD72819222FB6A600D1C684 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CBD7281A222FB6BF00D1C684 /* NSNotificationNameExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +344,7 @@
 				CB37528A21EC6AD500512C98 /* AppDelegate.swift in Sources */,
 				CB3752B221EC77CC00512C98 /* DurationFormatter.swift in Sources */,
 				CB1DD06821EDC01800D54F11 /* FetchDateFormatter.swift in Sources */,
+				CBD7281B222FB6BF00D1C684 /* NSNotificationNameExtension.swift in Sources */,
 				CB3752B821EC7F2100512C98 /* LocationViewController.swift in Sources */,
 				CB3752C521ECBF4B00512C98 /* FibonacciViewController.swift in Sources */,
 				CB1DD06621EDBC4300D54F11 /* FetchViewController.swift in Sources */,
